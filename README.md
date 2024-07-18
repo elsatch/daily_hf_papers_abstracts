@@ -1,4 +1,4 @@
-# HF Daily Papers Processor
+# HuggingFace Daily Papers Processor
 
 This project automates the process of downloading, summarizing, and converting daily papers from Hugging Face into easily readable formats.
 
