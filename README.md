@@ -6,7 +6,6 @@ This project automates the process of downloading, summarizing, and converting d
 
 - Download daily papers from Hugging Face API
 - Extract abstracts and generate markdown summaries
-- Convert markdown summaries to PDF
 - Handle empty files and weekends/holidays
 - Avoid reprocessing existing files
 
@@ -18,12 +17,10 @@ hf_daily_papers/
 ├── data/
 │   ├── input/  # Downloaded JSON files
 │   ├── output/ # Generated markdown files
-│   └── pdf/    # Generated PDF files
 │
 ├── src/
 │   ├── download_daily_papers.py
 │   ├── daily_papers_abstract_extractor.py
-│   └── markdown_to_pdf.py
 │
 └── README.md
 ```
