@@ -16,7 +16,11 @@ def json_to_markdown(json_data):
     if not json_data:
         return None  # Return None for empty data
     
-    markdown_content = "# Daily Papers Summary\n\n"
+    # Extract the date from the first paper's publishedAt field
+    first_paper_date = datetime.fromisoformat(json_data[0]['paper']['publishedAt'].replace('Z', '+00:00'))
+    date_str = first_paper_date.strftime('%Y-%m-%d')
+    
+    markdown_content = f"# Daily Papers Summary for {date_str}\n\n"
     
     for article in json_data:
         paper = article['paper']
