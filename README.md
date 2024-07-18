@@ -1,6 +1,8 @@
-# HuggingFace Daily Papers Processor
+# HuggingFace Daily Papers Abstracts Extractor
 
 This project automates the process of downloading, summarizing, and converting daily papers from Hugging Face into easily readable formats.
+
+![Sample output of abstract extraction process](img/daily_hf_papers_abstracts_sample_output.png)
 
 ## Features
 
