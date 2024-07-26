@@ -44,7 +44,7 @@ def get_output_filename(input_filename):
 
 def process_daily_papers(input_file):
     # Load the JSON data
-    with open(input_file, 'r') as file:
+    with open(input_file, 'r', encoding='utf-8') as file:
         data = json.load(file)
 
     # Convert JSON to markdown
